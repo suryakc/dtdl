@@ -1,0 +1,48 @@
+{
+    "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line;1",
+    "@type": "Interface",
+    "displayName": "Factory Production Line - Interface Model",
+    "@context": "dtmi:dtdl:context;2",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "LineId",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "LineOperationStatus",
+            "schema": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line:status;1",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line:rel_runs_steps;1",
+            "name": "rel_runs_steps",
+            "displayName": "Runs steps",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "active",
+                    "schema": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line:status;1"
+                }
+            ]
+        }
+    ],
+    "schemas": {
+        "@type": "Enum",
+        "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line:status;1",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "offline",
+                "enumValue": 1
+            },
+            {
+                "name": "online",
+                "enumValue": 2
+            }
+        ]
+    }
+}
