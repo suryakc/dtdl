@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:floor;1",
+    "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:floor;1",
     "@type": "Interface",
     "displayName": "Factory Floor - Interface Model",
     "@context": "dtmi:dtdl:context;2",
@@ -19,10 +19,10 @@
         },
         {
             "@type": "Relationship",
-            "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:floor:rel_runs_lines;1",
+            "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:floor:rel_runs_lines;1",
             "name": "rel_runs_lines",
             "displayName": "Runs production lines",
-            "target": "dtmi:com:microsoft:iot:e2e:digital_factory:production_line;1"
+            "target": "dtmi:com:suryakc:iot:e2e:digital_factory:production_line;1"
         }
     ]
 }

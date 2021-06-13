@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:chocolate_factory;1",
+    "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:chocolate_factory;1",
     "@type": "Interface",
     "displayName": "Digital Factory - Interface Model",
     "@context": "dtmi:dtdl:context;2",
@@ -14,16 +14,16 @@
             "@type": "Property",
             "name": "GeoLocation",
             "schema": {
-                "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:custom_schema:GeoCord;1",
+                "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:custom_schema:GeoCord;1",
                 "@type": "Object",
                 "fields": [
                     {
-                        "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:custom_schema:GeoCord:lat;1",
+                        "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:custom_schema:GeoCord:lat;1",
                         "name": "Latitude",
                         "schema": "double"
                     },
                     {
-                        "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:custom_schema:GeoCord:lon;1",
+                        "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:custom_schema:GeoCord:lon;1",
                         "name": "Longitude",
                         "schema": "double"
                     }
@@ -32,10 +32,10 @@
         },
         {
             "@type": "Relationship",
-            "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:chocolate_factory:rel_has_floors;1",
+            "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:chocolate_factory:rel_has_floors;1",
             "name": "rel_has_floors",
             "displayName": "Has Floors",
-            "target": "dtmi:com:microsoft:iot:e2e:digital_factory:floor;1"
+            "target": "dtmi:com:suryakc:iot:e2e:digital_factory:floor;1"
         }
     ]
 }
