@@ -1,0 +1,34 @@
+{
+    "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step_grinding;1",
+    "@type": "Interface",
+    "extends": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step;1",
+    "displayName": "Factory Production Step: Grinding/Crushing - Interface Model",
+    "@context": "dtmi:dtdl:context;2",
+    "contents": [
+        {
+            "@type": ["Property", "Temperature"],
+            "name": "ChassisTemperature",
+            "schema": "double",
+            "unit": "degreeFahrenheit",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "TimeSpan"],
+            "name": "GrindingTime",
+            "schema": "integer",
+            "unit": "minute"
+        },
+        {
+            "@type": ["Property", "Power"],
+            "name": "PowerUsage",
+            "schema": "double",
+            "unit" : "kilowatt"
+        },
+        {
+            "@type": ["Property", "Force"],
+            "name": "Force",
+            "schema": "double",
+            "unit": "pound"
+        }
+    ]
+}

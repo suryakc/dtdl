@@ -1,0 +1,59 @@
+{
+    "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step;1",
+    "@context": "dtmi:dtdl:context;2",
+    "@type": "Interface",
+    "displayName": "Factory Production Step - Interface Model",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "StepId",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "StartTime",
+            "schema": "dateTime"
+        },
+        {
+            "@type": "Property",
+            "name": "FinalStep",
+            "schema": "boolean"
+        },
+        {
+            "@type": "Property",
+            "name": "OperationStatus",
+            "schema": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step:status;1",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "rel_step_link",
+            "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step:rel_step_link;1",
+            "displayName": "Step Link",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "FinalStep",
+                    "schema": "boolean"
+                }
+            ]
+        }
+    ],
+    "schemas": {
+        "@type": "Enum",
+        "@id": "dtmi:com:suryakc:iot:e2e:digital_factory:production_step:status;1",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "offline",
+                "displayName": "offline",
+                "enumValue": 1
+            },
+            {
+                "name": "online",
+                "displayName": "online",
+                "enumValue": 2
+            }
+        ]
+    }
+}
